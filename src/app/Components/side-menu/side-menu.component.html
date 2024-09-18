@@ -1,0 +1,26 @@
+<button (click)="alternateVisibility()"></button>
+<section class="sidemenu-container"
+[style.background-color]="theme"
+[style.width]="widthMenu + '%' "
+[style.display]="visibleMenu ? 'flex' : 'none'">
+    
+<div class="item">
+    <img src="https://infoarte.ar/wp-content/uploads/2023/12/a-3-150x150.jpg" alt="User Image">
+        <p>{{userName}}</p>
+    <!--Interpolacion de datos activada-->
+    <button (click)="alternateVisibility()">Back</button>
+    <!--Ejecutamos event binding-->
+</div>
+<div class="item">
+    <p><span>📆</span> Dashboard</p>
+</div>
+<div class="item">
+    <p><span>👨</span> Profile</p>
+</div>
+<div class="item">
+    <button class="btn" (click)="setTheme('#8B0000')">Change Color</button>
+    <button class="btn" (click)="sentSize()">Change Size</button>
+    <!--Ejecutamos event binding-->
+</div>
+</section>
+
